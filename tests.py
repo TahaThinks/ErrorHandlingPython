@@ -1,9 +1,13 @@
 # FileNotFound Handling
 try:
     file = open("a_file.txt")
-except:
+    a_dictionary = {"key" : "value"}
+    print(a_dictionary["non_existent_key"])
+except FileNotFoundError:
     file = open("a_file.txt", 'w')
     file.write("Hello Taha!")
+except KeyError:
+    print("That Key doesn't Exist")
 
 
 
