@@ -6,3 +6,6 @@ with open("a_file.txt") as file:
 a_dictionary = {"key":"value"}
 value = a_dictionary["non_exisitent_key"]
 
+#IndexError
+fruit_list = ["Apple", "Banana", "Pear"]
+fruit = fruit_list[3]
