@@ -9,3 +9,7 @@ value = a_dictionary["non_exisitent_key"]
 #IndexError
 fruit_list = ["Apple", "Banana", "Pear"]
 fruit = fruit_list[3]
+
+#TypeError
+text ="abc"
+print(text+5)
