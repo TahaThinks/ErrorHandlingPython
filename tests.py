@@ -1,14 +1,13 @@
-fruits = eval(input())
-# 🚨 Do not change the code above
+# eval() function will create a list of dictionaries using the input
+facebook_posts = eval(input())
 
-# Catch the exception and make sure the code runs without crashing.
-def make_pie(index):
+total_likes = 0
+
+for post in facebook_posts:
     try:
-        fruit = fruits[index]
-    except IndexError:
-        print("Fruit pie")
-    else:
-        print(fruit + " pie")
+        total_likes = total_likes + post['Likes']
+    except KeyError:
+        continue
 
-# 🚨 Do not change the code below
-make_pie(4)
+
+print(total_likes)
