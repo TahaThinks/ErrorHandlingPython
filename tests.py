@@ -12,6 +12,5 @@ else:
     content = file.read()
     print(content)
 finally:
-    file.close()
-    print("File is closed.")
+    raise KeyError("This is an error created by Taha")
 
