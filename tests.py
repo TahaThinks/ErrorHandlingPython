@@ -6,8 +6,8 @@ try:
 except FileNotFoundError:
     file = open("a_file.txt", 'w')
     file.write("Hello Taha!")
-except KeyError:
-    print("That Key doesn't Exist")
+except KeyError as error_message:
+    print(f"The Key {error_message} doesn't Exist")
 
 
 
