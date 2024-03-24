@@ -1,6 +1,8 @@
-# FileNotFound
-with open("a_file.txt") as file:
-    file.read()
+# FileNotFound Handling
+try:
+    file = open("a_file.txt")
+except:
+    file = open("a_file.txt", 'w')
 
 # KeyError
 a_dictionary = {"key": "value"}
