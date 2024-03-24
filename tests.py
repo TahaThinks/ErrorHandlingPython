@@ -1,8 +1,14 @@
-height = float(input("Height: "))
-weight = float(input("Weight: "))
+fruits = eval(input())
+# 🚨 Do not change the code above
 
-if height > 3:
-    raise ValueError("Human Height is out of Range")
+# Catch the exception and make sure the code runs without crashing.
+def make_pie(index):
+    try:
+        fruit = fruits[index]
+    except IndexError:
+        print("Fruit pie")
+    else:
+        print(fruit + " pie")
 
-bmi = weight / height ** 2
-print(bmi)
+# 🚨 Do not change the code below
+make_pie(4)
